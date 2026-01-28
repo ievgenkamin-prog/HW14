@@ -17,13 +17,14 @@
                         <span>Register</span>
                     </label>
                 </div>
+                <form action="/submit-form" method="post">
                 <div class="title"><h1>Login</h1></div>
-                <form class="email" action="/submit-form" method="post">
+                <div class="email">
                     <input type="email" id="email" name="email" placeholder="E-mail" required>
-                </form>
-                <form class="password" action="/submit-form" method="post">
+                </div>
+                <div class="password" action="/submit-form" method="post">
                     <input type="password" name="password" id="password" placeholder="Password" required>
-                </form>
+                </div>
                 <div class="group">
                     <div class="checkbox">
                         <input type="checkbox" name="remember" id="remember">
@@ -31,8 +32,9 @@
                     </div>
                     <div class="forgot"><a href="#">Forgot  password?</a></div>
                 </div>
-                <form action="/submit-form" method="post" class="submit">
+                <div class="submit">
                     <input type="submit" name="login" id="login" placeholder="Login">
+                </div>
                 </form>
                 <div class="group2">
                     <h2>Don't have an account yet?</h2>
